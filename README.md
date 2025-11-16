@@ -1,6 +1,6 @@
 # talk_hk
 
-This is the readme to accompany the dataset & r-script component on osf.io: URL here
+This is the readme to accompany the dataset & R-Scripts, which are stored as a component of the project on osf.io: https://osf.io/axy69/
 
 This component consists of a number of CSV files and R scripts. This file breaks down what is included in this component, how it can be used
 
