@@ -1,0 +1,23 @@
+---
+title: "TalkHK Web"
+output: html_document
+---
+
+```{r, include = F}
+
+library(tidyverse)
+library(htmlwidgets)
+library(plotly)
+
+source("01_tidy.R")
+source("02_visuals.R")
+
+```
+
+# Well here we go
+
+```{r, echo=F}
+
+ggplotly(hkp_vict_age)
+
+```
