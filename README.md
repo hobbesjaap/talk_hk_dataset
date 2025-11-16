@@ -10,7 +10,7 @@ They are kept in the "data" folder. These are manually compiled from publicly av
 
 - Hong Kong Social Welfare Department: <https://www.swd.gov.hk/en/pubsvc/family/fcw_info/fcwdocument/cprstat/index.html>
 - Against Child Abuse (ACA, NGO): <https://aca.org.hk/en/quarterly>
-- End Child Sexual Abuse Foundation (ECSAF, NGO): <https://www.ecsaf.org.hk/en-hk/annual_reports/ >
+- End Child Sexual Abuse Foundation (ECSAF, NGO): <https://www.ecsaf.org.hk/en-hk/annual_reports/>
 
 Additionally, custom data requests were made to a number of governmental departments, available here: <https://accessinfo.hk/en/user/taura_edgar/requests>
 
