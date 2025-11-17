@@ -112,9 +112,14 @@ swd_csa_cases %>%
   )
 #ggsave("generated/swd_csa_cases.png")
 
+#ggplot(aes(fill=fct_relevel(CSA_Type, "Buggery","Rape","Incest","Unlawful Sexual\nIntercourse"), y=Number_of_Cases, x=Source_Year, group=Penetrative)) +
+
+  #  
+  
 swd_data_type %>%
   mutate(CSA_Type = str_wrap(CSA_Type, width = 20)) %>%
-ggplot(aes(fill=CSA_Type, y=Number_of_Cases, x=Source_Year)) +
+  #fct_relevel(CSA_Type, "Other") %>%
+  ggplot(aes(fill=fct_relevel(CSA_Type, "Other"), y=Number_of_Cases, x=Source_Year)) +
   geom_bar(position="stack", stat="identity") +
   scale_fill_manual(values = custom_colours_long) +
   labs(
@@ -296,7 +301,7 @@ swd_data_relationship %>%
     y = "Population Size",
     x = "Year",
     #title="Victim-Perpetrator Relationship - Annual Trend",
-    subtitle="Perpetrators under the category of the Unknown age group were unrelated or unidentified persons, \nor where the relationship could not be determined.",
+    subtitle="Perpetrators under the category 'Unknown' were unrelated or unidentified persons, \nor where the relationship could not be determined.",
     caption="Source: Social Welfare Department"
   ) +
   guides(fill = guide_legend(reverse=TRUE)) +

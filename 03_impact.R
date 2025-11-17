@@ -196,3 +196,25 @@ doj_all_charges <- inspect_doj_data %>%
   tally(Number_of_Charges) %>% as.integer()
 
 is_doj_penetration_charges <- round((doj_penetration_charges / doj_all_charges)*100)
+
+swd_2020_24_cases <- swd_data_relationship %>%
+  filter(Source_Year == "2020" |
+           Source_Year == "2021" |
+           Source_Year == "2022" |
+           Source_Year == "2023" |
+           Source_Year == "2024") %>%
+  tally(Number_of_Cases) %>% as.integer()
+
+swd_2020_24_cases_friend <- swd_data_relationship %>%
+  filter(Source_Year == "2020" |
+           Source_Year == "2021" |
+           Source_Year == "2022" |
+           Source_Year == "2023" |
+           Source_Year == "2024") %>%
+  filter(Relationship == "Friend / Schoolmate / Peer") %>%
+  tally(Number_of_Cases) %>% as.integer()
+
+hkp_data_type %>%
+  filter(Source_Year == "2024") %>%
+  tally(Number_of_Cases) %>% as.integer()
+
